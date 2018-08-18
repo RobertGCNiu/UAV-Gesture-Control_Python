@@ -12,4 +12,4 @@ The Tellopy can be installed by pip. But When I intall 'av' by pip, the error oc
 $conda install av -c conda-forge
 
 ## Hand Gesture Recognition
-The blog link of this code is here ([part1](https://gogul09.github.io/software/hand-gesture-recognition-p1) and [part2](https://gogul09.github.io/software/hand-gesture-recognition-p2))
+The blog link of this code is here ([part1](https://gogul09.github.io/software/hand-gesture-recognition-p1) and [part2](https://gogul09.github.io/software/hand-gesture-recognition-p2)).
