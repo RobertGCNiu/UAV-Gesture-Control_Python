@@ -14,7 +14,6 @@ import av
 import cv2.cv2 as cv2
 import traceback
 import numpy
-
 host = ''
 port = 9000
 locaddr = (host, port)
@@ -50,33 +49,45 @@ recvThread = threading.Thread(target=recv)
 recvThread.start()
 
 #msgs=['command','takeoff','cw 180','up 30','speed?','forward 60','flip b','ccw 90','left 60','back 60','right 60','Battery? ','land', 'end']
-msgs=['command','takeoff','cw 180','up 30','land', 'end']
+#msgs=['command','takeoff','cw 180','up 30','land', 'end']
+
+msg = 'command'
+msg = msg.encode(encoding="utf-8")
+sent = sock.sendto(msg, tello_address)
+
+#for msg in msgs:
+while True:
+    msgs = input('The Command:')
 
 
-opencamera()
-for msg in msgs:
+        # time.sleep(3)
+        # print(msg)
+        #
+        #
+        # if not msg:
+        #     break
+        #
+        # if 'end' in msg:
+        #     print ('...')
+        #     sock.close()
+        #     break
+    if msgs == 't':
+        msg = 'takeoff'
 
-    try:
-        time.sleep(3)
-        print(msg)
-
-
-        if not msg:
-            break  
-
-        if 'end' in msg:
-            print ('...')
-            sock.close()
-            break
-
-        # Send data
-        msg = msg.encode(encoding="utf-8") 
+    if msgs == 'l':
+        msg = 'land'
+        msg = msg.encode(encoding="utf-8")
         sent = sock.sendto(msg, tello_address)
-
-    except KeyboardInterrupt:
-        print ('\n . . .\n')
-        sock.close()  
+        sock.close()
         break
+        # Send data
+    if msgs == 'f':
+        msg = 'flip b'
+    if msgs == 'u':
+        msg = 'up 10'
+    msg = msg.encode(encoding="utf-8")
+    sent = sock.sendto(msg, tello_address)
+
 
 
 
