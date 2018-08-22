@@ -36,7 +36,7 @@ def main():
                     sleep(1)
                 if cv2.waitKey(1) & 0xFF == ord('l'):
                     drone.land()
-                    sleep(1)
+                    sleep(2)
                 if cv2.waitKey(1) & 0xFF == ord('w'):
                     drone.forward(10)
                     sleep(1)
@@ -58,6 +58,12 @@ def main():
                 if cv2.waitKey(1) & 0xFF == ord('t'):
                     drone.takeoff()
                     sleep(2)
+                if cv2.waitKey(1) & 0xFF == ord('u'):
+                    drone.up(10)
+                    sleep(1)
+                if cv2.waitKey(1) & 0xFF == ord('n'):
+                    drone.down(10)
+                    sleep(1)
                 frame_skip = int((time.time() - start_time)/frame.time_base)
 
     except Exception as ex:

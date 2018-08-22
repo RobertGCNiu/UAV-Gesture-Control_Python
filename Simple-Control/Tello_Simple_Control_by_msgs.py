@@ -85,6 +85,7 @@ while True:
         msg = 'flip b'
     if msgs == 'u':
         msg = 'up 10'
+
     msg = msg.encode(encoding="utf-8")
     sent = sock.sendto(msg, tello_address)
 
