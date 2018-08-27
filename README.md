@@ -34,6 +34,6 @@ The python codes are updated and can be run directly if you connect your Tello w
 The following video is the result of [video_effect.py](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/tutorial_python/video_effect.py).
   
 
-<div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaple-video/detection.png"></div>
+<div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/detection.png"></div>
 
-<div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaple-video/posedetection.gif"></div>
+<div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/posedetection.gif"></div>
