@@ -9,7 +9,30 @@ You can use the files in Simple-Control. The message is sent as string to Tello 
 ## Tellopy Control
 The Tellopy can be installed by pip. But When I intall 'av' by pip, the error occured and I can't fix it. The easy method to solve is to use Anaconda by running
 
+```
 $conda install av -c conda-forge
+```
+## Openpose 
+Please follow the [Installation Manual](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation.md) to install [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). Ubuntu version is recommended. All of codes are only checked in Ubuntu 16.04 system. Please make sure all of the required packages have been installed. It will cost almost 30 minutes.
 
-## Hand Gesture Recognition
-The blog link of this code is here ([part1](https://gogul09.github.io/software/hand-gesture-recognition-p1) and [part2](https://gogul09.github.io/software/hand-gesture-recognition-p2)).
+If you have error like <font color=red>'CMake Error at /usr/share/cmake-3.5/Modules/ExternalProject.cmake:1915 (message)'</font> when running Cmake GUI, please run the following code
+
+$cd 3rdparty
+
+
+```
+$git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe.git
+```
+
+Now, run CMake GUI to Configure and Generate.
+
+Check OpenPose was properly installed by running it on the default images, video, or webcam: [Quick Start](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start).
+
+## Pose Detection by the Camera of Tello
+The python codes are updated and can be run directly if you connect your Tello with PC. Please copy the files '/python_tutorial' to your computer path 'openpose/build/examples/python_tutorial'
+
+The following video is the result of [video_effect.py](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/tutorial_python/video_effect.py).
+
+![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png)
+
+![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/posedetection.gif)
