@@ -17,10 +17,9 @@ Please follow the [Installation Manual](https://github.com/CMU-Perceptual-Comput
 
 If you have error like <font color=red>'CMake Error at /usr/share/cmake-3.5/Modules/ExternalProject.cmake:1915 (message)'</font> when running Cmake GUI, please run the following code
 
-$cd 3rdparty
-
 
 ```
+$cd 3rdparty
 $git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe.git
 ```
 
