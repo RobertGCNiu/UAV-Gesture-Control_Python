@@ -32,9 +32,7 @@ Check OpenPose was properly installed by running it on the default images, video
 The python codes are updated and can be run directly if you connect your Tello with PC. Please copy the files '/python_tutorial' to your computer path 'openpose/build/examples/python_tutorial'
 
 The following video is the result of [video_effect.py](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/tutorial_python/video_effect.py).
-
-<div align=center><img width="150" height="150" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png></div>
   
-
+![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png)
 
 ![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/posedetection.gif)
