@@ -35,6 +35,6 @@ The following video is the result of [video_effect.py](https://github.com/Robert
 
 <div align=center><img width="150" height="150" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png></div>
   
-![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png)
+
 
 ![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/posedetection.gif)
