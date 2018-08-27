@@ -1,12 +1,8 @@
 # From Python
 # It requires OpenCV installed for Python
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import sys
 import cv2
 import os
-import numpy as np
-import scipy.io as sio
 from sys import platform
 
 # Remember to add your installation path here
@@ -42,21 +38,11 @@ openpose = op.OpenPose(params)
 
 while 1:
     # Read new image
-    img = cv2.imread("../../../examples/media/police.jpg")
-    #img = cv2.imread("../../../examples/media/COCO_val2014_000000000192.jpg")
+    img = cv2.imread("../../../examples/media/COCO_val2014_000000000192.jpg")
     # Output keypoints and the image with the human skeleton blended on it
     keypoints, output_image = openpose.forward(img, True)
     # Print the human pose keypoints, i.e., a [#people x #keypoints x 3]-dimensional numpy object with the keypoints of all the people on that image
-    # print(keypoints)
-    # print('the shape of output keypoints is ', np.shape(keypoints))
-    # print('the type of keypoints is ', type(keypoints))
-    # np.savetxt('keypointsfile', keypoints)
-    # sio.savemat('./keypoints_test',mdict={'out': keypoints}, oned_as='row')
-    # matdata = sio.loadmat('./keypoints_test')
-    # print(matdata)
+    print(keypoints)
     # Display the image
-    np.save( 'policeman',keypoints)
     cv2.imshow("output", output_image)
     cv2.waitKey(15)
-
-    # break
