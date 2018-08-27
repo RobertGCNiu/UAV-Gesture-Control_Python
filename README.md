@@ -33,7 +33,7 @@ The python codes are updated and can be run directly if you connect your Tello w
 
 The following video is the result of [video_effect.py](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/tutorial_python/video_effect.py).
 
-<div align=center><img width="150" height="150" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png></div>
+<div align=center><img width="150" height="150" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png/></div>
   
 ![Pose Detection by UAV](https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/exmaples/detection.png)
 
