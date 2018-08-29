@@ -36,3 +36,5 @@ The following video is the result of [video_effect.py](https://github.com/Robert
 <div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/detection.png"></div>
 
 <div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/posedetection.gif"></div>
+
+<div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/Pose_Control.gif"></div>
