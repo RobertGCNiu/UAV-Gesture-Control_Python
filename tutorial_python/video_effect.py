@@ -75,12 +75,11 @@ def main():
                     frame_skip = frame_skip - 1
                     continue
                 start_time = time.time()
-
+                count_frame = 0
                 image = cv2.cvtColor(numpy.array(frame.to_image()), cv2.COLOR_RGB2BGR)
                 #cv2.imshow('Original', image)
                 keypoints, output_image = openpose.forward(image, True)
                 cv2.imshow("output", output_image)
-
                 interupt = cv2.waitKey(10)
 
                 if interupt & 0xFF == ord('q'):
