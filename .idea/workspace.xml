@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de902c5-5d2d-4de7-9ccd-b4638de05063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tutorial_python/kNN/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/right.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="399">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
               <folding>
                 <element signature="e#1#37#0" expanded="true" />
               </folding>
@@ -64,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial_python/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -275,8 +272,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.kNNtest (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.kNNtest" />
         <item itemvalue="Python.position_test" />
       </list>
@@ -514,22 +511,22 @@
     <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#1#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_python/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding>
+            <element signature="e#1#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
