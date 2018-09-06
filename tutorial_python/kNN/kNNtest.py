@@ -29,7 +29,6 @@ def Euclidean(vec1, vec2):
 def calculate_dist(keypoints_collection,input_Pose):
     keypoints = keypoints_collection.get('keypoints')
     new = np.reshape(keypoints,(pose_times,25,3))
-    input_Pose = np.load('policeman.npy')
     input_Pose = input_Pose[0,0:9,0:2]
     inputvec_all = keypoints2Matrix(input_Pose)
     #print(inputvec_all)
@@ -58,7 +57,7 @@ def knn(dist_all,k):
 
 pose_times = 10
 pose_number = 5
-input_Pose = np.load('policeman.txt.npy')
+input_Pose = np.load('policeman_uleft.npy')
 
 keypoint_collection_1 = sio.loadmat('./action_uleft')
 keypoint_collection_2 = sio.loadmat('./action_right')

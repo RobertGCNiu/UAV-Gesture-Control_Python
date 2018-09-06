@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de902c5-5d2d-4de7-9ccd-b4638de05063" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/policeman.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/policeman.txt.npy" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +54,8 @@
       <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="462">
+              <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -91,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,24 +115,6 @@
             <path>
               <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
-              <item name="TelloPy-develop-0.5.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
-              <item name="TelloPy-develop-0.5.0" type="462c0819:PsiDirectoryNode" />
-              <item name="tellopy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
-              <item name="TelloPy-develop-0.5.0" type="462c0819:PsiDirectoryNode" />
-              <item name="tellopy" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
               <item name="tutorial_python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -141,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,8 +285,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21031903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -314,25 +298,26 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24608502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924962" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -348,13 +333,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -365,23 +354,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#1#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py" />
     <entry file="file://$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,9 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -414,9 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -431,9 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
           <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -441,9 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1281">
           <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -465,9 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,16 +454,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_python/video_effect_Voice.py" />
-    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#1#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py" />
     <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -513,16 +466,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1165">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="462">
+          <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
         </state>
       </provider>
     </entry>
