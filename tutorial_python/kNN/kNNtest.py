@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import math
 import scipy.io as sio
+import os
 #
 
 def keypoints2Matrix(keypoints_need):
@@ -60,14 +61,16 @@ def knn(dist_all):
 pose_times = 10
 pose_number = 5
 k = 5
+path1=os.path.abspath('')
+
 def implement_kNN(input_Pose):
     #input_Pose = np.load('yogav.npy')
 
-    keypoint_collection_1 = sio.loadmat('./action_uleft')
-    keypoint_collection_2 = sio.loadmat('./action_right')
-    keypoint_collection_3 = sio.loadmat('./action_left')
-    keypoint_collection_4 = sio.loadmat('./action_uright')
-    keypoint_collection_5 = sio.loadmat('./action_v')
+    keypoint_collection_1 = sio.loadmat(path1 +os.sep+'kNN'+ os.sep+'action_uleft.mat')
+    keypoint_collection_2 = sio.loadmat(path1 +os.sep+'kNN'+ os.sep+'./action_right')
+    keypoint_collection_3 = sio.loadmat(path1 +os.sep+'kNN'+ os.sep+'./action_left')
+    keypoint_collection_4 = sio.loadmat(path1 +os.sep+'kNN'+ os.sep+'./action_uright')
+    keypoint_collection_5 = sio.loadmat(path1 +os.sep+'kNN'+ os.sep+'./action_v')
 
     dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
     dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
