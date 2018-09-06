@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de902c5-5d2d-4de7-9ccd-b4638de05063" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial_python/kNN/policeman_lr.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial_python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial_python/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+            <state relative-caret-position="651">
+              <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding>
                 <element signature="e#1#37#0" expanded="true" />
               </folding>
@@ -61,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_python/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py" />
         <option value="$PROJECT_DIR$/tutorial_python/kNN/test.py" />
         <option value="$PROJECT_DIR$/tutorial_python/kNN/__init__.py" />
-        <option value="$PROJECT_DIR$/tutorial_python/test.py" />
         <option value="$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py" />
+        <option value="$PROJECT_DIR$/tutorial_python/test.py" />
       </list>
     </option>
   </component>
@@ -307,7 +307,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21031903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -511,22 +511,22 @@
     <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding>
+            <element signature="e#1#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_python/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial_python/kNN/kNNtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-          <folding>
-            <element signature="e#1#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
