@@ -29,10 +29,10 @@ def Euclidean(vec1, vec2):
 def calculate_dist(keypoints_collection,input_Pose):
     keypoints = keypoints_collection.get('keypoints')
     new = np.reshape(keypoints,(pose_times,25,3))
-    input_Pose = np.load('policeman.txt.npy')
+    input_Pose = np.load('policeman.npy')
     input_Pose = input_Pose[0,0:9,0:2]
     inputvec_all = keypoints2Matrix(input_Pose)
-    print(inputvec_all)
+    #print(inputvec_all)
     dist = np.zeros((pose_times))
     for pose_inx in range(pose_times):
         keypoints_pts = new[pose_inx,0:9,0:2]
@@ -57,24 +57,28 @@ def knn(dist_all,k):
     return np.argmax(x_fre)
 
 pose_times = 10
-pose_number = 3
-input_Pose = np.load('predict3.npy')
+pose_number = 5
+input_Pose = np.load('policeman.txt.npy')
 
-keypoint_collection_1 = sio.loadmat('./action_1')
-keypoint_collection_2 = sio.loadmat('./action_2')
-#keypoint_collection_3 = sio.loadmat('./action_3')
-keypoint_collection_4 = sio.loadmat('./action_5')
+keypoint_collection_1 = sio.loadmat('./action_uleft')
+keypoint_collection_2 = sio.loadmat('./action_right')
+keypoint_collection_3 = sio.loadmat('./action_left')
+keypoint_collection_4 = sio.loadmat('./action_uright')
+keypoint_collection_5 = sio.loadmat('./action_v')
+
 dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
 dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
-#dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
+dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
 dist_4 = calculate_dist(keypoint_collection_4,input_Pose)
+dist_5 = calculate_dist(keypoint_collection_5,input_Pose)
 
 dist_1_all = labeled_to_dist(dist_1,0)
 dist_2_all = labeled_to_dist(dist_2,1)
-#dist_3_all = labeled_to_dist(dist_3,2)
-dist_4_all = labeled_to_dist(dist_4,2)
+dist_3_all = labeled_to_dist(dist_3,2)
+dist_4_all = labeled_to_dist(dist_4,3)
+dist_5_all = labeled_to_dist(dist_5,4)
 
-dist_all = np.vstack((dist_1_all,dist_2_all,dist_4_all))
+dist_all = np.vstack((dist_1_all,dist_2_all,dist_3_all, dist_4_all, dist_5_all))
 dist_sort_index = np.argsort(dist_all[:,0])
 
 print(knn(dist_all,10))
