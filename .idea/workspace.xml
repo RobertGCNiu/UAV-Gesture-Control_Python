@@ -58,11 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="position_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="position_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="336">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kNNtest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="e#1#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,6 +97,7 @@
         <option value="$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py" />
         <option value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/video_effect.py" />
         <option value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py" />
+        <option value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py" />
       </list>
     </option>
   </component>
@@ -99,13 +112,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
+              <item name="example-video" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
@@ -130,15 +147,21 @@
               <item name="tellopy" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Tello-Gesture-Control" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tello-Gesture-Control" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial_python" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../雷电模拟器" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.position_test">
+  <component name="RunManager" selected="Python.kNNtest">
     <configuration name="Tello_Simple_Control_by_msgs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tello-Gesture-Control" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,6 +194,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="kNNtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tello-Gesture-Control" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,9 +276,11 @@
       <item itemvalue="Python.simple_takeoff" />
       <item itemvalue="Python.Tello_Simple_Control_by_msgs" />
       <item itemvalue="Python.position_test" />
+      <item itemvalue="Python.kNNtest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.kNNtest" />
         <item itemvalue="Python.position_test" />
         <item itemvalue="Python.video_effect" />
         <item itemvalue="Python.Tello_Simple_Control_by_msgs" />
@@ -273,11 +316,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21031903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -286,26 +330,25 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24608502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924962" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -315,7 +358,29 @@
     <MESSAGE value="simplify the code" />
     <option name="LAST_COMMIT_MESSAGE" value="simplify the code" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="e#79#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
@@ -333,15 +398,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial_python/video_effect_Voice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial_python/video_effect_Voice.py" />
     <entry file="file://$PROJECT_DIR$/Simple-Control/Tello_Simple_Control_by_msgs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
@@ -433,19 +490,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial_python/video_effect_Voice.py">
+    <entry file="file://$PROJECT_DIR$/tutorial_python/video_effect_Voice.py" />
+    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/position_test.py">
+    <entry file="file://$PROJECT_DIR$/TelloPy-develop-0.5.0/tellopy/examples/kNNtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="672">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#1#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
