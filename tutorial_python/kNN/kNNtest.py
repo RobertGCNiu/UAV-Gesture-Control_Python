@@ -4,6 +4,7 @@ import numpy as np
 import math
 import scipy.io as sio
 #
+
 def keypoints2Matrix(keypoints_need):
     vec_all = np.zeros([8,2])
     vec_all[0,:] = 0#(keypoints_need[1,:] - keypoints_need[2,:])/np.linalg.norm((keypoints_need[1,:] - keypoints_need[2,:]),ord=1) #1-2
@@ -45,45 +46,50 @@ def labeled_to_dist(dist,label):
     dist_all[:, 1] = label
     return dist_all
 
-def knn(dist_all,k):
+def knn(dist_all):
     x_fre = np.zeros(pose_number)
     dist_sort_index = np.argsort(dist_all[:,0])
     k_min_index = dist_sort_index[0:k]
     l = dist_all[k_min_index,1]
     for i in range(pose_number):
         x_fre[i] = (l==i).sum()
-    print(x_fre)
-    return np.argmax(x_fre)
+    # print(x_fre)
+    return np.argmax(x_fre), dist_all[k_min_index,0]
+
 
 pose_times = 10
 pose_number = 5
-input_Pose = np.load('policeman_uleft.npy')
+k = 5
+def implement_kNN(input_Pose):
+    #input_Pose = np.load('yogav.npy')
 
-keypoint_collection_1 = sio.loadmat('./action_uleft')
-keypoint_collection_2 = sio.loadmat('./action_right')
-keypoint_collection_3 = sio.loadmat('./action_left')
-keypoint_collection_4 = sio.loadmat('./action_uright')
-keypoint_collection_5 = sio.loadmat('./action_v')
+    keypoint_collection_1 = sio.loadmat('./action_uleft')
+    keypoint_collection_2 = sio.loadmat('./action_right')
+    keypoint_collection_3 = sio.loadmat('./action_left')
+    keypoint_collection_4 = sio.loadmat('./action_uright')
+    keypoint_collection_5 = sio.loadmat('./action_v')
 
-dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
-dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
-dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
-dist_4 = calculate_dist(keypoint_collection_4,input_Pose)
-dist_5 = calculate_dist(keypoint_collection_5,input_Pose)
+    dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
+    dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
+    dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
+    dist_4 = calculate_dist(keypoint_collection_4,input_Pose)
+    dist_5 = calculate_dist(keypoint_collection_5,input_Pose)
 
-dist_1_all = labeled_to_dist(dist_1,0)
-dist_2_all = labeled_to_dist(dist_2,1)
-dist_3_all = labeled_to_dist(dist_3,2)
-dist_4_all = labeled_to_dist(dist_4,3)
-dist_5_all = labeled_to_dist(dist_5,4)
+    dist_1_all = labeled_to_dist(dist_1,0)
+    dist_2_all = labeled_to_dist(dist_2,1)
+    dist_3_all = labeled_to_dist(dist_3,2)
+    dist_4_all = labeled_to_dist(dist_4,3)
+    dist_5_all = labeled_to_dist(dist_5,4)
 
-dist_all = np.vstack((dist_1_all,dist_2_all,dist_3_all, dist_4_all, dist_5_all))
-dist_sort_index = np.argsort(dist_all[:,0])
+    dist_all = np.vstack((dist_1_all,dist_2_all,dist_3_all, dist_4_all, dist_5_all))
+    dist_sort_index = np.argsort(dist_all[:,0])
+    return knn(dist_all)
 
-print(knn(dist_all,10))
 
-# print(dist_all)
-print(dist_all[dist_sort_index,:])
+# print(knn(dist_all,10))
+#
+# # print(dist_all)
+# print(dist_all[dist_sort_index,:])
 
 
 # keypoint_collection_2 = sio.loadmat('./action_5')
