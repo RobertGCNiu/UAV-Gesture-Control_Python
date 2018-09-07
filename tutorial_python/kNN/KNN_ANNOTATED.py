@@ -1,10 +1,11 @@
-
 from matplotlib import pyplot as plt
 import numpy as np
 import math
 import scipy.io as sio
-import os
-#
+
+# from the input the action in current image,
+# calculate the vectors btw keypoints_2 and  keypoints_3, keypoints_3 and  keypoints_4, keypoints_5 and  keypoints_6,
+# keypoints_6 and  keypoints_7, then return the direction vector of these keypoints
 
 def keypoints2Matrix(keypoints_need):
     vec_all = np.zeros([8,2])
@@ -28,6 +29,8 @@ def Euclidean(vec1, vec2):
 #     print(np.diag(innerproduct_abs))
 #     return  sum(np.diag(innerproduct_abs))
 
+# from the record action.mat import the keypoints data of each action
+# and calculate the distance btw the action in current image and dedicated comparing recorded action set
 def calculate_dist(keypoints_collection,input_Pose):
     keypoints = keypoints_collection.get('keypoints')
     new = np.reshape(keypoints,(pose_times,25,3))
@@ -38,7 +41,8 @@ def calculate_dist(keypoints_collection,input_Pose):
     for pose_inx in range(pose_times):
         keypoints_pts = new[pose_inx,0:9,0:2]
         vec_all = keypoints2Matrix(keypoints_pts)
-        dist[pose_inx] = Euclidean(vec_all,inputvec_all)
+        dist[pose_inx] = Euclidean(vec_all,inputvec_all)   # for each action record in same action_record we get the normalized difference
+                                                           # of current action in the input image btw each action record
     return dist
 
 def labeled_to_dist(dist,label):
@@ -47,55 +51,45 @@ def labeled_to_dist(dist,label):
     dist_all[:, 1] = label
     return dist_all
 
-def knn(dist_all):
+def knn(dist_all,k):
     x_fre = np.zeros(pose_number)
     dist_sort_index = np.argsort(dist_all[:,0])
     k_min_index = dist_sort_index[0:k]
     l = dist_all[k_min_index,1]
     for i in range(pose_number):
         x_fre[i] = (l==i).sum()
-    # print(x_fre)
-    return np.argmax(x_fre), dist_all[k_min_index,0]
-
+    print(x_fre)
+    return np.argmax(x_fre)
 
 pose_times = 10
-pose_number = 6
-k = 10
-path1=os.path.abspath('')
+pose_number = 5
+input_Pose = np.load('policeman_uleft.npy')
 
-def implement_kNN(input_Pose):
-    #input_Pose = np.load('yogav.npy')
+keypoint_collection_1 = sio.loadmat('./action_uleft')
+keypoint_collection_2 = sio.loadmat('./action_right')
+keypoint_collection_3 = sio.loadmat('./action_left')
+keypoint_collection_4 = sio.loadmat('./action_uright')
+keypoint_collection_5 = sio.loadmat('./action_v')
 
-    keypoint_collection_1 = sio.loadmat(path1 + os.sep+'./action_uleft')
-    keypoint_collection_2 = sio.loadmat(path1 + os.sep+'./action_right')
-    keypoint_collection_3 = sio.loadmat(path1 + os.sep+'./action_left')
-    keypoint_collection_4 = sio.loadmat(path1 + os.sep+'./action_uright')
-    keypoint_collection_5 = sio.loadmat(path1 + os.sep+'./action_v')
-    keypoint_collection_6 = sio.loadmat(path1 + os.sep+'./action_lr')
+dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
+dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
+dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
+dist_4 = calculate_dist(keypoint_collection_4,input_Pose)
+dist_5 = calculate_dist(keypoint_collection_5,input_Pose)
 
-    dist_1 = calculate_dist(keypoint_collection_1,input_Pose)
-    dist_2 = calculate_dist(keypoint_collection_2,input_Pose)
-    dist_3 = calculate_dist(keypoint_collection_3,input_Pose)
-    dist_4 = calculate_dist(keypoint_collection_4,input_Pose)
-    dist_5 = calculate_dist(keypoint_collection_5,input_Pose)
-    dist_6 = calculate_dist(keypoint_collection_6,input_Pose)
+dist_1_all = labeled_to_dist(dist_1,0)
+dist_2_all = labeled_to_dist(dist_2,1)
+dist_3_all = labeled_to_dist(dist_3,2)
+dist_4_all = labeled_to_dist(dist_4,3)
+dist_5_all = labeled_to_dist(dist_5,4)
 
-    dist_1_all = labeled_to_dist(dist_1,0)
-    dist_2_all = labeled_to_dist(dist_2,1)
-    dist_3_all = labeled_to_dist(dist_3,2)
-    dist_4_all = labeled_to_dist(dist_4,3)
-    dist_5_all = labeled_to_dist(dist_5,4)
-    dist_6_all = labeled_to_dist(dist_6,5)
+dist_all = np.vstack((dist_1_all,dist_2_all,dist_3_all, dist_4_all, dist_5_all))
+dist_sort_index = np.argsort(dist_all[:,0])
 
-    dist_all = np.vstack((dist_1_all,dist_2_all,dist_3_all, dist_4_all, dist_5_all,dist_6_all))
-    dist_sort_index = np.argsort(dist_all[:,0])
-    return knn(dist_all)
+print(knn(dist_all,10))
 
-
-# print(knn(dist_all,10))
-#
-# # print(dist_all)
-# print(dist_all[dist_sort_index,:])
+# print(dist_all)
+print(dist_all[dist_sort_index,:])
 
 
 # keypoint_collection_2 = sio.loadmat('./action_5')
