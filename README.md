@@ -1,4 +1,4 @@
-# Tello-Gesture-Control
+# UAV-Gesture-Control
 This project is made by Chinese Univeristy of Hong Kong, Shenzhen(CUHKSZ) and Stanford.
 
 The goal is to control the UAV Tello by hand gesture or body pose.
@@ -40,3 +40,9 @@ The following video is the result of [video_effect.py](https://github.com/Robert
 <div align=center><img width="600" height="400" src="https://github.com/RobertGCNiu/Tello-Gesture-Control/blob/master/example-video/Pose_Control.gif"></div>
 
 <div align=center><img width="600" height="400" src= "https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/example-video/left.gif"></div>
+
+##Use kNN to classify the pose
+The training data sets are collected by 'mat' file. All codes and data sets are [here](https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/tree/master/tutorial_python/kNN)
+<div align=center><img width="600" height="400" src= "https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/tutorial_python/kNN/trainning_data_sets.png"></div>
+
+
