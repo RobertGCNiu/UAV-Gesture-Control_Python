@@ -41,8 +41,8 @@ The following video is the result of [video_effect.py](https://github.com/Robert
 
 <div align=center><img width="600" height="400" src= "https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/example-video/left.gif"></div>
 
-##Use kNN to classify the pose
+## Use kNN to classify the pose
 The training data sets are collected by 'mat' file. All codes and data sets are [here](https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/tree/master/tutorial_python/kNN)
-<div align=center><img width="600" height="400" src= "https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/tutorial_python/kNN/trainning_data_sets.png"></div>
+<div align=center><img width="800" height="600" src= "https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/tutorial_python/kNN/trainning_data_sets.png"></div>
 
 
