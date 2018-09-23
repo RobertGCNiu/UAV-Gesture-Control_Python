@@ -5,7 +5,7 @@ import math
 import scipy.io as sio
 import os
 #
-
+#what of keypoints have multi-matirx?
 def keypoints2Matrix(keypoints_need):
     vec_all = np.zeros([8,2])
     vec_all[0,:] = 0#(keypoints_need[1,:] - keypoints_need[2,:])/np.linalg.norm((keypoints_need[1,:] - keypoints_need[2,:]),ord=1) #1-2
@@ -34,6 +34,7 @@ def calculate_dist(keypoints_collection,input_Pose):
     input_Pose = input_Pose[0,0:9,0:2]
     inputvec_all = keypoints2Matrix(input_Pose)
     #print(inputvec_all)
+    #what if keypoints are larger than 1 matrix
     dist = np.zeros((pose_times))
     for pose_inx in range(pose_times):
         keypoints_pts = new[pose_inx,0:9,0:2]
