@@ -48,7 +48,7 @@ The training data sets are collected by 'mat' file. All codes and data sets are 
 
 
 ## Speech control
-I try to use —∂∑…‘∆(XFyun) to realize the off-line speech control. However, it only provides C++ API and it's not easy for me to transfer as Python version. 
+I try to use Xun Fei Yun to realize the off-line speech control. However, it only provides C++ API and it's not easy for me to transfer as Python version. 
 
 [Speech_Recognition package](https://github.com/Uberi/speech_recognition) is a strong tool for speech recognition. However, there are so many bugs when I try to install it on Ubuntu 16.04. I firstly use PC and error told me that microphone can't be found. I used a USB microphone. It can't be recognize by Pyaudio. After a long-time struggle, I decide to use notebook with microphone.
 
