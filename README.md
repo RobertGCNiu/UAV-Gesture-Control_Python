@@ -57,3 +57,4 @@ After installing Pyaudio and Speech_Recognition, there are still bugs. For examp
 ```
 sudo pip install --upgrade pocketsphinx
 ```
+I thought Anaconda will result some problems. If you can't solve your problems, try to de-active the anaconda.
