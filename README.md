@@ -13,6 +13,10 @@ The Tellopy can be installed by pip. But When I intall 'av' by pip, the error oc
 ```
 $conda install av -c conda-forge
 ```
+The interesting thing is that 'av' can be easily installed without error when I use Python 2.7.12 by running
+```
+$pip install av
+```
 ## Openpose 
 Please follow the [Installation Manual](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation.md) to install [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). Ubuntu version is recommended. All of codes are only checked in Ubuntu 16.04 system. Please make sure all of the required packages have been installed. It will cost almost 30 minutes.
 
