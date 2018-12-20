@@ -4,8 +4,8 @@ The EDU version of Tello has been released. The new function of Tello EDU is AP 
 AP YourWiFiName YourWiFiPW
 ```
 Then you can log in your router to see the corresponding IP address of UAVs. My UAVs' IPs are '192.168.1.239' and '192.168.1.163'. Then We can send the command message to Tello.
-A demo for taking off is shown here. The code is [here](/simple-control/Tello3.py)
-<div align=center><img width="600" height="400" src= "example-video/takeoff2.gif"></div>
+A demo for taking off is shown here. The code is [here](https://github.com/RobertGCNiu/UAV-Gesture-Control_Python/blob/master/Simple-Control/tello.py)
+<div align=center><img width="400" height="600" src= "example-video/takeoff2.gif"></div>
 
 # UAV-Gesture-Control
 This project is made by Chinese Univeristy of Hong Kong, Shenzhen(CUHKSZ) and Stanford.
