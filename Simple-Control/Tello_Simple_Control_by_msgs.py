@@ -50,10 +50,6 @@ recvThread.start()
 #msgs=['command','takeoff','cw 180','up 30','speed?','forward 60','flip b','ccw 90','left 60','back 60','right 60','Battery? ','land', 'end']
 #msgs=['command','takeoff','cw 180','up 30','land', 'end']
 
-msg = 'command'
-msg = msg.encode(encoding="utf-8")
-sent = sock.sendto(msg, tello_address)
-
 #for msg in msgs:
 while True:
     msgs = input('The Command:')
