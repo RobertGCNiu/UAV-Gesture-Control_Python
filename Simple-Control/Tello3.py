@@ -83,7 +83,7 @@ locaddr = (host, port)
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-tello_address1 = ('192.168.1.103', 8889)
+tello_address1 = ('192.168.191.2', 8889)
 
 sock.bind(locaddr)
 
