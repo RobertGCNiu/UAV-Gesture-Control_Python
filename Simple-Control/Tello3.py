@@ -23,7 +23,7 @@ locaddr = (host, port)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 tello_address1 = ('192.168.191.2', 8889)
-
+tello_address2 = ('192.168.191.3', 8889)
 sock.bind(locaddr)
 
 
@@ -69,8 +69,8 @@ while True:
     #     print ('...')
     #     sock.close()
     #     break
-    # if msgs == 't':
-    #     msg = 'takeoff'
+    if msgs == 't':
+        msg = 'takeoff'
     #
     # if msgs == 'l':
     #     msg = 'land'
@@ -86,5 +86,5 @@ while True:
 
     msg = msg.encode(encoding="utf-8")
     sent = sock.sendto(msg, tello_address1)
-#     sent = sock.sendto(msg, tello_address2)
+    sent = sock.sendto(msg, tello_address2)
 
